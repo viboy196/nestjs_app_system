@@ -6,7 +6,7 @@ import {
   Repository,
 } from 'typeorm';
 
-import { BaseInterfaceRepository } from './base.interface.repository';
+import { BaseInterfaceRepository } from './sql.base.interface.repository';
 
 interface HasId {
   id: number;

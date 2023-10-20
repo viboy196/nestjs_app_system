@@ -1,6 +1,14 @@
-export const constants = {
+export const constantsInjectable = {
   services: {
-    auth: 'AuthServices',
+    MICROSERVICES_AUTH_SERVICE: 'AUTH_SERVICE',
+    AuthServices: 'AuthServices',
+    RabbitqlService: 'RabbitqlService',
+  },
+  domain: {
+    user: 'user',
+  },
+  repository: {
+    UsersRepository: 'UsersRepository',
   },
   // rabbit: {
   //     RABBITMQ_DEFAULT_USER: "user",

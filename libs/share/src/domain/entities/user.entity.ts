@@ -1,7 +1,8 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { constantsInjectable } from '@constants';
 
-@Entity('user')
-export class User {
+@Entity(constantsInjectable.domain.user)
+export class UserEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -12,7 +13,7 @@ export class User {
   lastName: string;
 
   @Column({ unique: true })
-  email: string;
+  username: string;
 
   @Column({ select: false })
   password: string;
